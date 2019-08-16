@@ -8,8 +8,7 @@
     						<!-- 正文开始 -->
 		<div id="aa1" class="articalContent   newfont_family">
 			<div><font FACE="Arial"><span STYLE="white-space: pre-wrap;"><u><b>标准输入输出</B></U></SPAN></FONT></DIV>
-<div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">linux中有三种标准输入输出:
-STDIN，STDOUT，STDERR，分别对应0，1，2。</SPAN></FONT></DIV>
+<div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">linux中有三种标准输入输出: STDIN，STDOUT，STDERR，分别对应0，1，2。</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">STDIN:标准输入，默认从键盘读取信息；</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">STDOUT:标准输出，默认将输出结果输出至终端；</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">STDERR:标准错误，默认将输出结果输出至终端。</SPAN></FONT></DIV>
@@ -31,26 +30,21 @@ STDIN，STDOUT，STDERR，分别对应0，1，2。</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;"><b><u>Linux 的特殊文件
 /dev/null</U></B></SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">/dev/null，或称空设备，是一个特殊的设备文件，它丢弃一切写入其中的数据（但报告写入操作成功），读取它则会立即得到一个EOF。</SPAN></FONT></DIV>
-<div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">Unix中，/dev/null 被称为位桶(bit
-bucket)或者黑洞(black hole)。</SPAN></FONT></DIV>
+<div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">Unix中，/dev/null 被称为位桶(bit bucket)或者黑洞(black hole)。</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">空设备通常被用于丢弃不需要的输出流，或作为用于输入流的空文件。</SPAN></FONT></DIV>
-<div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">读它的时候，它会提供无限的空字符(NULL, ASCII，NUL,
-0x00)。</SPAN></FONT></DIV>
+<div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">读它的时候，它会提供无限的空字符(NULL, ASCII，NUL, 0x00)。</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;"><br /></SPAN></FONT></DIV>
 <div><br /></DIV>
 <div><br /></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;"><b>使用例</B></SPAN></FONT></DIV>
 <div><u STYLE="white-space: pre-wrap;">例1</U></DIV>
-<div><font FACE="Arial"><span STYLE="white-space: pre-wrap; background-color: rgb(240, 240, 240);">cat
-filename &gt;/dev/null</SPAN></FONT></DIV>
+<div><font FACE="Arial"><span STYLE="white-space: pre-wrap; background-color: rgb(240, 240, 240);">cat filename &gt;/dev/null</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">文件filename存在时,不会输出任何信息，因为我们将通过标准输出显示的文件内容重定向到了/dev/null</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">如果filename不存在，系统则显示错误信息。如果不想看到错误输出,则</SPAN></FONT></DIV>
-<div><font FACE="Arial"><span STYLE="white-space: pre-wrap; background-color: rgb(240, 240, 240);">cat
-filename 2&gt;/dev/null</SPAN></FONT></DIV>
+<div><font FACE="Arial"><span STYLE="white-space: pre-wrap; background-color: rgb(240, 240, 240);">cat filename 2&gt;/dev/null</SPAN></FONT></DIV>
 <div><br /></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;"><u>例2</U></SPAN></FONT></DIV>
-<div><font FACE="Arial"><span STYLE="white-space: pre-wrap; background-color: rgb(240, 240, 240);">(echo
-1; e1) &gt;a.log 2&gt;&amp;1</SPAN></FONT></DIV>
+<div><font FACE="Arial"><span STYLE="white-space: pre-wrap; background-color: rgb(240, 240, 240);">(echo 1; e1) &gt;a.log 2&gt;&amp;1</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;">结果输出到a.log</SPAN></FONT></DIV>
 <div><font FACE="Arial"><span STYLE="white-space: pre-wrap;"><br /></SPAN></FONT></DIV>
 <div><span STYLE="white-space: pre-wrap;"><u>例3</U></SPAN></DIV>
